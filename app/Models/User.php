@@ -16,7 +16,10 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'id'
     ];
+
+    protected $primaryKey = 'id';
 
     public function posts()
     {
